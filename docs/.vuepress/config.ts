@@ -6,7 +6,7 @@ import type { DefaultThemeOptions } from 'vuepress'
 export default defineUserConfig<DefaultThemeOptions>({
     // 站点配置
     lang: 'zh-CN',
-    title: 'FlickerBot 帮助文档',
+    title: 'Flicker的帮助文档',
     description: '简易的QQBot🐍🦀',
     base: '/',
     head:[
