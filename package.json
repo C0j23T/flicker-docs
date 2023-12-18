@@ -1,0 +1,22 @@
+{
+  "name": "flicker-docs",
+  "version": "1.0.0",
+  "description": "Flicker.rs usage document",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Heptasentium, QyuJ",
+  "license": "CC-BY-SA-3.0",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^2.0.0-rc.0",
+    "vuepress": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^2.0.0-rc.0"
+  }
+}
