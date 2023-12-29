@@ -315,6 +315,9 @@ Q: _flicker
 A: 我与你同在。
 ```
 
+### 早 / 晚
+与flicker.py一致，请参考[早 / 晚](/features/cmd_list.md#早-晚)
+
 ### 午好
 触发`中午好`提示
 ::: tip 提示
@@ -327,6 +330,15 @@ A: 中午好，毕竟是午夜嘛，吃宵夜了吗？（拿出）
    --------------------
    随机码：xxx
 ```
+
+### flick
+与flicker.py一致，请参考[flick](/features/cmd_list.md#flick)
+
+### tarot
+与flicker.py一致，请参考[tarot](/features/cmd_list.md#tarot)
+
+### luck
+与flicker.py一致，请参考[luck](/features/cmd_list.md#luck)
 
 ### poke
 戳一戳某个人，为没有戳一戳的QQ客户端设计  
@@ -354,6 +366,9 @@ A: Flicker.rs哒！！！
    --------------------
    随机码：xxx
 ```
+
+### 漂流瓶相关功能
+与flicker.py一致，请参考[漂流瓶相关功能](/features/cmd_list.md#漂流瓶相关功能)
 
 ### Phigros 查分器
 与flicker.py一致，请参考[Phigros 查分器](/features/cmd_list.md#phigros-查分器)  
