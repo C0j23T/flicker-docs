@@ -2,7 +2,7 @@
 home: true
 heroImage: /images/hero.jpg
 heroText: FlickerBot
-tagline: 使用Python和Rust编写的简易QQ机器人
+tagline: 只是想提供工具集合的简易机器人
 
 actions:
   - text: 阅读文档
