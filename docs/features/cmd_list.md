@@ -1,5 +1,249 @@
 # 详细命令列表及使用方法
 注：所有示例中，`Q:`为调用示例，`A:`为回答示例
+## flicker.rs
+### flicker
+``` text
+Q: _flicker
+A: 我与你同在。
+```
+
+### 早 / 晚
+与flicker.py一致，请参考[早 / 晚](/features/cmd_list.md#早-晚-1)
+
+### 午好
+触发`中午好`提示
+::: tip 提示
+该命令无需前缀，且根据时间不同会产生不同对话
+:::
+示例：
+``` text
+Q: 午
+A: 中午好，毕竟是午夜嘛，吃宵夜了吗？（拿出）
+   --------------------
+   随机码：xxx
+```
+
+### flick
+与flicker.py一致，请参考[flick](/features/cmd_list.md#flick-1)
+
+### tarot
+与flicker.py一致，请参考[tarot](/features/cmd_list.md#tarot-1)
+
+### luck
+与flicker.py一致，请参考[luck](/features/cmd_list.md#luck-1)
+
+### poke
+戳一戳某个人，为没有戳一戳的QQ客户端设计  
+只能通过艾特选择要戳的人  
+可使用`_poke @r`随机戳一戳  
+示例：
+``` text
+Q: _poke @r
+A: *戳了祈瑜久*
+```
+### stat
+查询flicker当前服务器状态  
+示例：  
+``` text
+Q: _stat
+A: Flicker.rs哒！！！
+   Ver. 0.1.6 x86_64
+   OS: Linux 2023.2 Kali GNU/Linux
+   RAM:
+   total: 2971.27MB
+   used: 816.28MB (27.5%)
+   proc: 200.55MB (6.7%)
+   Uptime: 94703
+   Reconnect: 0
+   --------------------
+   随机码：xxx
+```
+
+### 漂流瓶相关功能
+与flicker.py一致，请参考[漂流瓶相关功能](/features/cmd_list.md#漂流瓶相关功能-1)
+
+### 异世界转生 ~测测转生后的你是什么种族~
+如题  
+命令为`_tensei`或`_ts`，可以使用`_tensei @某人`查看其他人的种族  
+示例：
+```
+Q: _tensei
+A: 性别：女 身高：193cm B91/W66/H92
+   Lv：⑴
+   樣貌：发色：橙色   瞳孔：樱色十字瞳
+   性格&取向：性格：懒散   性取向：性冷淡   
+   喜好：甜食
+   HP：418
+   MP：623
+   物理防禦：438
+   魔法防禦：408
+   魔力資質：1022496
+   Rank：C
+   筋力：1495  體魄：1118   魔力：1848
+   敏捷：1226   耐力：1663   專注：929
+   種族：亚人族¤拉米亚[*特殊能力:蛻皮，熱能感知]
+   ¤初期進化選項☆美杜莎，白蛇，厄喀德娜
+   ————
+   固有skill：
+   ○7分钟内获得所有“七美德”技能 冷却时间：7天
+   ————
+   轉生者技能:
+   世界の聲
+   鉴定
+   成长輔助
+   空間收納
+   --------------------
+   随机码：xxx
+```
+
+### orange
+大人，请用噢润几~ヾ(´∀｀。ヾ)  
+
+### Phigros 查分器
+与flicker.py一致，请参考[Phigros 查分器](/features/cmd_list.md#phigros-查分器-1)  
+图片示例：  
+![phib19](/images/phi.jpg)
+
+### Malody 查分器
+与flicker.py一致，请参考[Malody 查分器](/features/cmd_list.md#malody-查分器-1)  
+相比flicker.py，本命令会查询最近6次最佳成绩和3次活动  
+图片示例：  
+![ma](/images/ma.jpg)
+
+### MaiMai 查分器
+查询MaiMai B50  
+与flicker.py大致一致，请参考[MaiMai 查分器](/features/cmd_list.md#maimai-查分器-1)  
+命令格式为`_mai b50`  
+可以通过追加艾特其他人或水鱼查分器的用户名查看别人的MaiMai B50  
+示例：
+``` text
+Q: _mai b50 ruaaziff
+A: 查询开始了哦！flicker绝赞手绘中...
+   --------------------
+   随机码：xxx
+A: *一张图片*
+   --------------------
+   随机码：xxx
+```
+图片示例：  
+![maimaib50](/images/maimai.jpg)
+
+### Arcaea 查分器
+新的Arcaea查分器，无需手动填入成绩  
+有如下子命令：  
+| 命令 | 说明 |
+|:----|:----|
+| a | 查询最近一次游玩成绩 |
+| a bind <好友代码> | 绑定arc账号 |
+| a b30 | 查询B30 |
+| a score <曲目名> <难度:默认FTR> | 查询曲目最佳成绩 |
+| a info或者song <曲目名> | 查看曲目信息 |
+| a alias <曲目名> | 查看曲目别名 |
+| a calc <分数> <定数或曲目名> <难度:可选> | 计算单曲PTT |
+| a rand | 随机曲目 |
+| a setpriv | 设置自定义搭档 |
+| a setpriv <开/true或关/false> | 设置是否隐藏账号信息(名称，好友代码) |
+| a setname <自定义名称> | 设置账号自定义名称 |
+
+使用说明：  
+1. 不需要再手动添加记录了
+2. 当前无查分任务时，会创建新的查分任务，此时会有五分钟的等待时间，当当前任务满10个人或者5分钟倒计时完成时，将会开始查分，持续5分钟左右，期间无法创建新的查分任务。这一次执行只会告知一次查分任务的相关信息，不会生成查分图
+3. 查分任务创建后，重复发送a b30可以查看进度，比如5分钟倒计时的进度和查询的进度
+4. 每次查分之后都会有6小时的冷却时间，期间使用该命令将会只返回查分图
+5. 目前b30还处于测试阶段，如果遇到问题请及时告知有关人员
+
+命令示例参考[Arcaea 查分器](/features/cmd_list.md#arcaea-查分器)  
+
+#### a score
+示例：
+``` text
+Q: _a score arcahv
+A: 查询开始了哦！flicker绝赞手绘中...
+   --------------------
+   随机码：xxx
+A: *一张图片，与recent一致*
+   --------------------
+   随机码：xxx
+```
+
+#### a calc
+示例：
+``` text
+Q: _a calc 9801145 11.4
+A: 分数9801145，定数11.4的话...PTT应该是: 12.405725
+   --------------------
+   随机码：xxx
+```
+
+#### a info
+示例：
+``` text
+Q: _a info init
+A: *一张图片*
+   --------------------
+   随机码：xxx
+```
+图片示例：  
+![info](/images/arc_info.jpg)
+
+#### a rand
+示例：  
+可以自己试一试（  
+
+#### a alias
+示例：
+``` text
+Q: _a alias mm
+A: 曲目[Malicious Mischance]的别名有：
+   >>> 灾厄
+   >>> 伊莉丝仰卧起坐
+   >>> mm
+   >>> 恶作剧
+   >>> 邪王真眼
+   >>> 在你身后
+   
+   flicker正在收集曲目别名，详情请查看主群群公告
+   --------------------
+   随机码：xxx
+```
+
+#### a setxxx
+::: tip 提示
+设置自定义搭档需键入`_a setchar`，等待flicker回应后发送一张背景透明的图片即可。无需手动改变图片中主要元素位置，它会在预处理中被自动纠正
+:::
+示例（无回复示例，都差不多）：
+``` text
+Q: _a setname EikoXI
+Q: _a setpriv true
+Q: _a setchar
+```
+
+图片示例：  
+Recent:    
+![recent](/images/a_recent_new.jpg)  
+B30:  
+![b30](/images/b30_new.jpg)
+
+### BiliPush
+哔哩哔哩动态推送功能，可通过uid订阅up主，其最新动态将会以图片形式推送到QQ群  
+有如下子命令：  
+| 命令 | 说明 |
+|:----|:----|
+| bili sub <up主uid> | 将up主添加到本群推送列表中 |
+| bili unsub <up主uid> | 将up主从本群推送列表移除 |
+| bili list | 获得本群关注的up主列表（uid） |
+| bili getdid <动态id> | 获取动态内容并生成图片 |
+
+示例：  
+``` text
+Q: _bili sub 1872890
+A: 关注成功
+   --------------------
+   随机码：xxx
+```
+推送图片示例：  
+![bili_push](/images/bilipush.jpg)
+
 ## flicker.py
 ::: danger 注意
 flicker.py暂不可用
@@ -159,6 +403,7 @@ Arcaea查分器相关
 | a bind <好友代码> | 绑定arc账号 |
 | a add <成绩> | 手动添加arc成绩 |
 | a b30 | 根据填入的成绩查询B30 |
+| a info <曲目名> | 查看曲目信息 |
 
 #### a
 查询最近一次的分数  
@@ -225,6 +470,8 @@ A: *一张图片*
 ```
 图片示例：  
 ![a_info](/images/a_info.jpg)
+
+#### a 
 
 ### Malody 查分器
 Malody查分器相关  
@@ -307,172 +554,3 @@ A: *一张图片*
 ```
 图片示例：  
 ![mai_old](/images/mai_old.jpg)
-
-## flicker.rs
-### flicker
-``` text
-Q: _flicker
-A: 我与你同在。
-```
-
-### 早 / 晚
-与flicker.py一致，请参考[早 / 晚](/features/cmd_list.md#早-晚)
-
-### 午好
-触发`中午好`提示
-::: tip 提示
-该命令无需前缀，且根据时间不同会产生不同对话
-:::
-示例：
-``` text
-Q: 午
-A: 中午好，毕竟是午夜嘛，吃宵夜了吗？（拿出）
-   --------------------
-   随机码：xxx
-```
-
-### flick
-与flicker.py一致，请参考[flick](/features/cmd_list.md#flick)
-
-### tarot
-与flicker.py一致，请参考[tarot](/features/cmd_list.md#tarot)
-
-### luck
-与flicker.py一致，请参考[luck](/features/cmd_list.md#luck)
-
-### poke
-戳一戳某个人，为没有戳一戳的QQ客户端设计  
-只能通过艾特选择要戳的人  
-可使用`_poke @r`随机戳一戳  
-示例：
-``` text
-Q: _poke @r
-A: *戳了祈瑜久*
-```
-### stat
-查询flicker当前服务器状态  
-示例：  
-``` text
-Q: _stat
-A: Flicker.rs哒！！！
-   Ver. 0.1.6 x86_64
-   OS: Linux 2023.2 Kali GNU/Linux
-   RAM:
-   total: 2971.27MB
-   used: 816.28MB (27.5%)
-   proc: 200.55MB (6.7%)
-   Uptime: 94703
-   Reconnect: 0
-   --------------------
-   随机码：xxx
-```
-
-### 漂流瓶相关功能
-与flicker.py一致，请参考[漂流瓶相关功能](/features/cmd_list.md#漂流瓶相关功能)
-
-### 异世界转生 ~测测转生后的你是什么种族~
-如题  
-命令为`_tensei`或`_ts`，可以使用`_tensei @某人`查看其他人的种族  
-示例：
-```
-Q: _tensei
-A: 性别：女 身高：193cm B91/W66/H92
-   Lv：⑴
-   樣貌：发色：橙色   瞳孔：樱色十字瞳
-   性格&取向：性格：懒散   性取向：性冷淡   
-   喜好：甜食
-   HP：418
-   MP：623
-   物理防禦：438
-   魔法防禦：408
-   魔力資質：1022496
-   Rank：C
-   筋力：1495  體魄：1118   魔力：1848
-   敏捷：1226   耐力：1663   專注：929
-   種族：亚人族¤拉米亚[*特殊能力:蛻皮，熱能感知]
-   ¤初期進化選項☆美杜莎，白蛇，厄喀德娜
-   ————
-   固有skill：
-   ○7分钟内获得所有“七美德”技能 冷却时间：7天
-   ————
-   轉生者技能:
-   世界の聲
-   鉴定
-   成长輔助
-   空間收納
-   --------------------
-   随机码：xxx
-```
-
-### Phigros 查分器
-与flicker.py一致，请参考[Phigros 查分器](/features/cmd_list.md#phigros-查分器)  
-图片示例：  
-![phib19](/images/phi.jpg)
-
-### Malody 查分器
-与flicker.py一致，请参考[Malody 查分器](/features/cmd_list.md#malody-查分器)  
-相比flicker.py，本命令会查询最近6次最佳成绩和3次活动  
-图片示例：  
-![ma](/images/ma.jpg)
-
-### MaiMai 查分器
-查询MaiMai B50  
-与flicker.py大致一致，请参考[MaiMai 查分器](/features/cmd_list.md#maimai-查分器)  
-命令格式为`_mai`  
-可以通过追加艾特其他人或水鱼查分器的用户名查看别人的MaiMai B50  
-示例：
-``` text
-Q: _mai ruaaziff
-A: 查询开始了哦！flicker绝赞手绘中...
-   --------------------
-   随机码：xxx
-A: *一张图片*
-   --------------------
-   随机码：xxx
-```
-图片示例：  
-![maimaib50](/images/maimai.jpg)
-
-### Arcaea 查分器
-新的Arcaea查分器，无需手动填入成绩  
-有如下子命令：  
-| 命令 | 说明 |
-|:----|:----|
-| a | 查询最近一次游玩成绩 |
-| a bind <好友代码> | 绑定arc账号 |
-| a b30 | 查询B30 |
-
-使用说明：  
-1. 不需要再手动添加记录了
-2. 当前无查分任务时，会创建新的查分任务，此时会有五分钟的等待时间，当当前任务满10个人或者5分钟倒计时完成时，将会开始查分，持续5分钟左右，期间无法创建新的查分任务。这一次执行只会告知一次查分任务的相关信息，不会生成查分图
-3. 查分任务创建后，重复发送a b30可以查看进度，比如5分钟倒计时的进度和查询的进度
-4. 每次查分之后都会有6小时的冷却时间，期间使用该命令将会只返回查分图
-5. 目前b30还处于测试阶段，如果遇到问题请及时告知有关人员
-
-命令示例参考[Arcaea 查分器](/features/cmd_list.md#arcaea-查分器)  
-
-图片示例：  
-Recent:    
-![recent](/images/a_recent_new.jpg)  
-B30:  
-![b30](/images/b30_new.jpg)
-
-### BiliPush
-哔哩哔哩动态推送功能，可通过uid订阅up主，其最新动态将会以图片形式推送到QQ群  
-有如下子命令：  
-| 命令 | 说明 |
-|:----|:----|
-| bili sub <up主uid> | 将up主添加到本群推送列表中 |
-| bili unsub <up主uid> | 将up主从本群推送列表移除 |
-| bili list | 获得本群关注的up主列表（uid） |
-| bili getdid <动态id> | 获取动态内容并生成图片 |
-
-示例：  
-``` text
-Q: _bili sub 1872890
-A: 关注成功
-   --------------------
-   随机码：xxx
-```
-推送图片示例：  
-![bili_push](/images/bilipush.jpg)
