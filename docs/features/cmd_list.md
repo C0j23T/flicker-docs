@@ -32,15 +32,6 @@ A: 中午好，毕竟是午夜嘛，吃宵夜了吗？（拿出）
 ### luck
 与flicker.py一致，请参考[luck](/features/cmd_list.md#luck-1)
 
-### poke
-戳一戳某个人，为没有戳一戳的QQ客户端设计  
-只能通过艾特选择要戳的人  
-可使用`_poke @r`随机戳一戳  
-示例：
-``` text
-Q: _poke @r
-A: *戳了祈瑜久*
-```
 ### stat
 查询flicker当前服务器状态  
 示例：  
@@ -223,6 +214,33 @@ Recent:
 ![recent](/images/a_recent_new.jpg)  
 B30:  
 ![b30](/images/b30_new.jpg)
+
+### Orzmic
+Orzmic相关功能  
+有如下子命令：  
+| 命令 | 说明 |
+| orz update | 通过发送orzmic二维码上传b30数据 |
+| orz b30 | 查询已上传的b30信息 |
+
+示例：
+``` text
+Q: .orz update
+A: 请发送含有完整二维码的图片
+   --------------------
+   随机码：xxx
+```
+``` text
+Q: .orz b30
+A: 查询开始了哦！flicker绝赞手绘中...
+   --------------------
+   随机码：xxx
+A: *一张图片*
+   --------------------
+   随机码：xxx
+```
+图片示例： 
+![b30](/images/orz_b30.jpg)
+
 
 ### BiliPush
 哔哩哔哩动态推送功能，可通过uid订阅up主，其最新动态将会以图片形式推送到QQ群  
