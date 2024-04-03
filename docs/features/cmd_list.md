@@ -225,13 +225,13 @@ Orzmic相关功能
 
 示例：
 ``` text
-Q: .orz update
+Q: _orz update
 A: 请发送含有完整二维码的图片
    --------------------
    随机码：xxx
 ```
 ``` text
-Q: .orz b30
+Q: _orz b30
 A: 查询开始了哦！flicker绝赞手绘中...
    --------------------
    随机码：xxx
