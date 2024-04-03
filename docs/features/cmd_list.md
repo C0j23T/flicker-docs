@@ -215,7 +215,7 @@ Recent:
 B30:  
 ![b30](/images/b30_new.jpg)
 
-### Orzmic
+### Orzmic 查分器
 Orzmic相关功能  
 有如下子命令：  
 | 命令 | 说明 |
