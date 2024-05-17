@@ -316,7 +316,7 @@ A: *一张图片*
    随机码：xxx
 ```
 图片示例：  
-![info](/images/arc_info.png)
+![info](/images/arc_info.jpg)
 
 #### a rand
 示例：  
@@ -376,7 +376,7 @@ A: *一张图片*
    随机码：xxx
 ```
 图片示例：  
-![bindinfo](/images/arc_bindinfo.jpg)
+![bindinfo](/images/arc_bindinfo.png)
 
 #### a events
 示例：
