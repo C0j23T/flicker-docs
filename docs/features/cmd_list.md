@@ -316,7 +316,7 @@ A: *一张图片*
    随机码：xxx
 ```
 图片示例：  
-![info](/images/arc_info.jpg)
+![info](/images/arc_info.png)
 
 #### a rand
 示例：  
